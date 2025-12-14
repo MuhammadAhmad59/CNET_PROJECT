@@ -4,10 +4,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Course**: CS3001 - Computer Networks (Fall 2025)  
-> **Section**: DS A & C  
-> **Submission Date**: November 30, 2025  
->
 > **Team Members**:  
 > - Muhammad Ahmad (22I-1929)  
 > - Shahzaib Afzal (22I-1956)  
