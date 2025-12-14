@@ -1,0 +1,72 @@
+{
+  "STDformer-GCN (Full)": [
+    {
+      "seed": 42,
+      "results": {
+        "12": {
+          "MSE": 1.2631837129592896,
+          "MAE": 1.0277737379074097,
+          "RMSE": 1.1239144598052333,
+          "training_time": 14.02498984336853,
+          "best_epoch": 1
+        }
+      }
+    }
+  ],
+  "STDformer-GCN (No Learnable Trend)": [
+    {
+      "seed": 42,
+      "results": {
+        "12": {
+          "MSE": 1.2495191097259521,
+          "MAE": 1.0223405361175537,
+          "RMSE": 1.1178189073933005,
+          "training_time": 14.232845544815063,
+          "best_epoch": 1
+        }
+      }
+    }
+  ],
+  "STDformer-GCN (No Hybrid Seasonal)": [
+    {
+      "seed": 42,
+      "results": {
+        "12": {
+          "MSE": 1.2662471532821655,
+          "MAE": 1.0293265581130981,
+          "RMSE": 1.1252764785963338,
+          "training_time": 15.213599920272827,
+          "best_epoch": 1
+        }
+      }
+    }
+  ],
+  "STDformer-GCN (No GCN)": [
+    {
+      "seed": 42,
+      "results": {
+        "12": {
+          "MSE": 1.2935118675231934,
+          "MAE": 1.0425055027008057,
+          "RMSE": 1.1373266318534854,
+          "training_time": 15.06672477722168,
+          "best_epoch": 1
+        }
+      }
+    }
+  ],
+  "STDformer (Baseline)": [
+    {
+      "seed": 42,
+      "results": {
+        "12": {
+          "MSE": 1.1663278341293335,
+          "MAE": 0.9937591552734375,
+          "RMSE": 1.0799665893578994,
+          "training_time": 14.10763144493103,
+          "best_epoch": 1
+        }
+      }
+    }
+  ]
+}
