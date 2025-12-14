@@ -216,7 +216,7 @@ Baseline/
 
 ```bash
 # Navigate to project root
-cd CNET_PROJECT
+cd your_project_root
 
 # Run baseline training
 python Baseline/train.py \
