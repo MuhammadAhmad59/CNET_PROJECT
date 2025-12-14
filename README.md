@@ -39,16 +39,18 @@ CNET_PROJECT/
 │   └── 22I-1929_22I-1956_22I-6181.pdf
 │
 ├── Baseline/               # Original STDformer implementation
-│   ├── models/            # Baseline model components
-│   ├── train_baseline.py  # Training script (1 epoch)
+│   ├── train.py  # Training script (1 epoch)
+|   ├── data_utils.py
+|   ├── evaluate.py
+|   ├── model.py
+|   ├── viz.py
 │   └── README.md          # Baseline documentation
 │
 ├── Enhanced/              # STDformer-GCN enhancements
-│   ├── models/           # Enhanced components
-│   │   ├── learnable_trend.py
-│   │   ├── hybrid_seasonal.py
-│   │   └── gcn_spatial.py
-│   ├── train_enhanced.py # Training script (10 epochs)
+│   │   ├── data_utils.py
+│   │   ├── train_enhanced.py  # Training script (10 epochs)
+│   │   └── model_enhanced.py
+│   ├── viz_enhanced.py 
 │   └── README.md         # Enhancement documentation
 │
 ├── data/                 # Datasets and preprocessing
@@ -60,14 +62,11 @@ CNET_PROJECT/
 │   └── README.md        # Data documentation
 │
 ├── experiments/         # Training and evaluation scripts
-│   ├── run_baseline.py
-│   ├── run_enhanced.py
-│   └── run_ablation.py
+│   ├── config.json
 │
 ├── results/            # Experimental results
 │   ├── tables/        # Performance metrics (CSV/JSON)
 │   ├── figures/       # Visualizations and plots
-│   └── checkpoints/   # Saved model weights
 │
 ├── requirements.txt   # Python dependencies
 ├── LICENSE           # MIT License
@@ -113,7 +112,7 @@ ls data/SYNTH data/PEMS03 data/PEMS04 data/PEMS07 data/PEMS08
 
 #### Baseline Model (1 Epoch)
 ```bash
-python experiments/run_baseline.py \
+python Baseline/train.py \
     --dataset SYNTH \
     --pred_len 12 \
     --epochs 1 \
@@ -122,28 +121,13 @@ python experiments/run_baseline.py \
 
 #### Enhanced Model (10 Epochs)
 ```bash
-python experiments/run_enhanced.py \
+python Enhanced/train_enhanced.py \
     --dataset SYNTH \
     --pred_len 12 \
     --epochs 10 \
     --batch_size 8 \
     --gcn_hidden 64 \
     --dropout 0.2
-```
-
-#### Ablation Studies
-```bash
-# Test without learnable trend
-python experiments/run_ablation.py --variant no_learnable_trend
-
-# Test without hybrid seasonal
-python experiments/run_ablation.py --variant no_hybrid_seasonal
-
-# Test without GCN
-python experiments/run_ablation.py --variant no_gcn
-
-# Full model
-python experiments/run_ablation.py --variant full
 ```
 
 ## 📊 Key Results
