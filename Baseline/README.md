@@ -201,21 +201,13 @@ CONFIG = {
 ```
 Baseline/
 ├── README.md                    # This file
-├── models/
-│   ├── __init__.py
-│   ├── stdformer.py            # Main STDformer model
-│   ├── decomposition.py        # Trend/seasonal decomposition
-│   ├── temporal_models.py      # Transformer, FA, RevIN-MLP
-│   ├── stra.py                 # Spatial-Temporal Relation Attention
-│   └── gating.py               # Fusion mechanism
-├── configs/
-│   └── baseline_config.yaml    # Configuration file
-├── train_baseline.py           # Training script
-├── evaluate_baseline.py        # Evaluation script
-└── utils/
-    ├── data_loader.py
-    ├── metrics.py
-    └── adjacency.py
+│   ├── model.py            # Main STDformer model
+│   ├── evaluate.py        
+│   ├── train.py      
+│   ├── viz.py                 
+│   └── data_utils.py               
+├── experiments/
+│   └── config.json    # Configuration file
 ```
 
 ## 🚀 Running Baseline Experiments
@@ -227,7 +219,7 @@ Baseline/
 cd CNET_PROJECT
 
 # Run baseline training
-python Baseline/train_baseline.py \
+python Baseline/train.py \
     --dataset SYNTH \
     --pred_len 12 \
     --epochs 1 \
