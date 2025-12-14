@@ -426,36 +426,17 @@ python Enhanced/train_enhanced.py \
     --pred_len 12
 ```
 
-### Batch Processing
-
-```bash
-# Run all experiments
-bash scripts/run_all_enhanced.sh
-```
 
 ## 📂 File Structure
 
 ```
 Enhanced/
 ├── README.md                       # This file
-├── models/
-│   ├── __init__.py
-│   ├── stdformer_gcn.py           # Complete enhanced model
-│   ├── learnable_trend.py         # Multi-scale CNN
-│   ├── hybrid_seasonal.py         # FFT + Dilated TCN
-│   ├── gcn_spatial.py             # 2-layer GCN
-│   ├── stra.py                    # STRA (from baseline)
-│   └── gating_fusion.py           # Learnable gating
-├── configs/
-│   ├── enhanced_config.yaml       # Full model config
-│   └── ablation_configs/          # Ablation variants
-│       ├── no_learnable_trend.yaml
-│       ├── no_hybrid_seasonal.yaml
-│       └── no_gcn.yaml
 ├── train_enhanced.py              # Training script
-├── evaluate_enhanced.py           # Evaluation script
-└── utils/
-    └── adjacency_builder.py       # Adjacency construction
+├── model_enhanced.py
+├── viz_enhanced.py
+├── data_utils.py
+├── config_enhanced.json   
 ```
 
 ## 💻 Complete Pipeline
