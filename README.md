@@ -166,7 +166,7 @@ python Enhanced/train_enhanced.py \
 
 ### Enhanced STDformer-GCN Pipeline
 
-![Model Architecture](images/architecture.png)
+![Model Architecture](images/10.png)
 
 ## 📈 Datasets
 
@@ -272,21 +272,10 @@ All team members contributed to architecture design, code review, documentation,
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Original STDformer authors (Wan et al., 2025) for the foundational architecture
 - PEMS database for providing publicly accessible traffic data
 - PyTorch and open-source community for development tools
 - Course instructor and teaching assistants for guidance and support
 
-## 📞 Contact
-
-For questions, collaborations, or feedback:
-
-- Muhammad Ahmad: [ahmad22i1929@gmail.com]
-- Shahzaib Afzal: [shahzaib22i1956@gmail.com]
-- Uzair Siddique: [uzair22i6181@gmail.com]
-
----
-
-**Academic Context**: This work was developed as part of CS3001 - Computer Networks (Fall 2025) and represents a research-based implementation project combining computer networks principles with advanced machine learning techniques for traffic flow prediction.
