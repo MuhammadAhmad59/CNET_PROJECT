@@ -510,13 +510,3 @@ class STDformerGCN(nn.Module):
 ## 📚 References
 
 See main repository README and technical report for complete citations.
-
-## 📞 Contact
-
-- Muhammad Ahmad: ahmad22i1929@gmail.com
-- Shahzaib Afzal: shahzaib22i1956@gmail.com
-- Uzair Siddique: uzair22i6181@gmail.com
-
----
-
-**Achievement**: This enhanced implementation demonstrates that careful architectural design and extended training can achieve near-perfect predictions on synthetic data (98.6% MSE reduction) while maintaining robust performance on real-world datasets.
